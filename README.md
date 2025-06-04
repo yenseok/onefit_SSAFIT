@@ -193,7 +193,7 @@
 ---
 
 ## 일정
-![WBS](docs/관통PJT 일정.png)
+![WBS](docs/wbs.png)
 
 
 ---
