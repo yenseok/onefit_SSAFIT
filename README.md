@@ -201,7 +201,12 @@
 ![API](docs/swagger1.png)
 ![API](docs/swagger2.png)
 ![API](docs/swagger3.png)
+
 ---
 
-## API 명세서
+## ⚙️ 협업 툴
+
+- [FigJam - 유스케이스, 클래스 다이어그램](https://www.figma.com/board/j6JpGonL6GW33LzpOp4CFI/Brain-Storming?node-id=0-1&t=nP2Lb2tg2dOHyAyS-1)
+- [Figma - 와이어프레임](https://www.figma.com/design/Hfa9j6S2Du7Gyp9uJHC5lM/SSAFIT-wireframe?node-id=0-1&t=nP2Lb2tg2dOHyAyS-1)
+
 
