@@ -106,6 +106,40 @@
 </tr></table>
 ▲ 게시판 상세조회, 검색, 내 글 검색, 게시글 작성 페이지
 
+#### 운동기구 예약 페이지
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f88bc542-fbb5-4ebc-97fc-41562a54d507" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/dafad5ec-b6a2-4f93-8230-6ccf875aae9e" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7a957201-28da-4070-9717-9f6d5c3065df" width="300"/></td>
+  </tr>
+</table>
+▲ 운동기구 예약 페이지: 1단계-날짜 선택, 2단계-운동기구 선택, 3단계-시간 선택
+
+#### PT 예약 페이지
+<img width="381" alt="스크린샷 2025-06-04 오후 8 09 17" src="https://github.com/user-attachments/assets/dbb1d8f6-5733-47e1-b4dc-8704a3ffd1a6" />
+<br>
+▲ PT 예약 페이지: 트레이너는 회원정보에서 가져옴. 날짜와 시간만 선택
+
+#### 나의 예약 페이지
+<img width="384" alt="스크린샷 2025-06-04 오후 8 10 26" src="https://github.com/user-attachments/assets/0c7c9fea-eb3b-4d1c-b828-1b1e1a8bcafb" />
+<br>
+▲ 나의 예약 페이지: 날짜별 운동기구 예약과 PT 예약 목록을 통합 조회. 예약 취소 가능
+
+#### 프로필
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/d1642527-9383-4254-a99c-8ab2870c8f4d" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/56436160-bce3-4947-a11f-3cfd0a3b9350" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/211864db-aab7-4aa7-a552-b4f1b68e5c89" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/48ccfd5b-cc4e-4004-8c25-b8dd0349414f" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/70e4d86a-2d67-47e9-aa82-de24b5bc2972" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/c4b9d796-297f-4731-9fed-af55d8dfccbb" width="300"/></td>
+  </tr>
+</table>
+▲ 프로필 페이지: 프로필 조회, 프로필 수정(프로필 사진, 이름, 이메일, 헬스장, 트레이너), 비밀번호 변경 페이지
 
 ---
 
