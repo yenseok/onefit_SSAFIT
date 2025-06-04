@@ -80,14 +80,18 @@
 
 ## 💻 서비스 화면
 
-#### 회원가입 페이지
+#### 회원가입 및 로그인 페이지
 
-<table><tr>
-<td><img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/></td>
-<td><img src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" width="300"/></td>
-<td><img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/></td>
-<td><img src="https://github.com/user-attachments/assets/cf98b1bc-446a-406a-98a5-e119b424eb48" width="300"/></td>
-</tr></table>
+<table>
+  <tr>
+    <td><img src="docs/signup1.png" width="300"/></td>
+    <td><img src="docs/signup2.png" width="300"/></td>
+    <td><img src="docs/signup3.png" width="300"/></td>
+    <td><img src="docs/signup4.png" width="300"/></td>
+    <td><img src="docs/login.png" width="300"/></td>
+  </tr>
+</table>
+
 ▲ 회원가입 페이지: 1단계-개인정보 입력, 2단계-헬스장 선택, 3단계-트레이너 선택
 
 #### 메인 페이지
