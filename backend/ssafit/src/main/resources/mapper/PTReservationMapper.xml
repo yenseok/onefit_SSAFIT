@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.mvc.model.dao.PTReservationDao">
+
+	<!-- pt 예약 -->
+    <insert id="insert" parameterType="PTReservation">
+        INSERT INTO pt (user_id, trainer_id, pt_date, pt_time)
+        VALUES (#{userId}, #{trainerId}, #{ptDate}, #{ptTime})
+    </insert>
+
+	<!-- 예약 취소 -->
+    <delete id="delete" parameterType="int">
+        DELETE FROM pt WHERE pt_id = #{ptId}
+    </delete>
+
+	<!-- 내 pt 예약 현황 조회 -->
+    <select id="selectByUserIdAndDate" parameterType="map" resultType="PTReservation">
+	    SELECT * 
+	    FROM pt 
+	    WHERE user_id = #{userId}
+	      AND pt_date = #{ptDate}
+	    ORDER BY pt_time
+	</select>
+	
+	<!-- 해당 날짜, 해당 트레이너가 어느 시간에 이미 예약이 되어있는지 확인 -->
+	<select id="selectReservedTimes" resultType="string">
+	    SELECT DATE_FORMAT(pt_time, '%H:%i')  -- '15:00', '16:30' 등으로 반환
+	    FROM pt
+	    WHERE trainer_id = #{trainerId}
+	      AND pt_date = #{ptDate}
+	    ORDER BY pt_time
+	</select>
+	
+	<!-- 이미 예약된 시간인지 확인 -->
+	<select id="countByTrainerAndDateTime" resultType="int">
+	    SELECT COUNT(*)
+	    FROM pt
+	    WHERE trainer_id = #{trainerId}
+	      AND pt_date = #{ptDate}
+	      AND pt_time = #{ptTime}
+	</select>
+	
+	<select id="findTrainerIdByName" resultType="int" parameterType="string">
+	    SELECT trainer_id
+	    FROM trainer
+	    WHERE trainer_name = #{trainerName}
+	</select>
+</mapper>

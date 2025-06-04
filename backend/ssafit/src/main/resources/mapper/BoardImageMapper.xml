@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.mvc.model.dao.BoardImageDao">
+	
+	<!-- 이미지 등록 -->
+    <insert id="insert">
+        INSERT INTO board_image (board_id, image_url, is_thumbnail, image_order)
+        VALUES (#{boardId}, #{imageUrl}, #{isThumbnail}, #{imageOrder})
+    </insert>
+
+    <!-- 게시글 ID 기준 이미지 전체 삭제 -->
+    <delete id="deleteByBoardId">
+        DELETE FROM board_image WHERE board_id = #{boardId}
+    </delete>
+
+    <!-- 게시글 ID 기준 이미지 목록 조회 (정렬 포함) -->
+    <select id="selectByBoardId" resultType="string">
+        SELECT image_url
+        FROM board_image
+        WHERE board_id = #{boardId}
+        ORDER BY image_order ASC
+    </select>
+
+    <!-- 게시글 ID + 이미지 URL 기준으로 특정 이미지 삭제 -->
+    <delete id="deleteByBoardIdAndImageUrl">
+        DELETE FROM board_image
+        WHERE board_id = #{boardId}
+          AND image_url = #{imageUrl}
+    </delete>
+
+    <!-- 이미지 순서 변경 -->
+    <update id="updateImageOrder">
+        UPDATE board_image
+        SET image_order = #{imageOrder}
+        WHERE board_id = #{boardId}
+          AND image_url = #{imageUrl}
+    </update>
+
+    <!-- 대표 이미지 여부 설정 -->
+    <update id="updateThumbnailFlag">
+        UPDATE board_image
+        SET is_thumbnail = #{isThumbnail}
+        WHERE board_id = #{boardId}
+          AND image_url = #{imageUrl}
+    </update>
+    
+</mapper>

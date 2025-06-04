@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.mvc.model.dao.TrainerDao">
+
+	<!-- 전체 게시글 조회 -->
+	<select id="selectAll" resultType="Trainer">
+		SELECT *
+		FROM trainer;
+	</select>
+
+	<!-- 상세 트레이너 조회 -->
+	<select id="selectOne" resultType="Trainer" parameterType="int">
+		SELECT * FROM trainer
+		WHERE trainer_id = #{trainerId};
+	</select>
+
+	<!-- 트레이너 등록 -->
+	<insert id="insertTrainer" parameterType="Trainer">
+		INSERT INTO trainer (user_id, password, name, age, hierarchy, address)
+		VALUES (#{userId}, #{password}, #{name}, #{age}, #{hierarchy},
+		#{address});
+	</insert>
+
+
+	<!-- 트레이너 삭제 -->
+	<delete id="deleteTrainer" parameterType="int">
+		DELETE FROM trainer
+		WHERE trainer_id
+		= #{trainerId};
+	</delete>
+
+	<!-- 트레이너 수정 -->
+<update id="updateTrainer" parameterType="Trainer">
+	UPDATE trainer
+	SET 
+	    age = #{age},
+	    hierarchy = #{hierarchy},
+	    address = #{address}
+	WHERE trainer_id = #{trainerId};
+</update>
+</mapper>

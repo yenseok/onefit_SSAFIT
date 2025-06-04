@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.mvc.model.dao.EquipmentDao">
+
+  <!-- 1. 먼저 resultMap부터 선언 -->
+<resultMap id="EquipmentResultMap" type="com.ssafy.mvc.model.dto.Equipment">
+  <id property="equipmentId" column="equipment_id"/>
+  <result property="equipmentName" column="equipment_name"/>
+  <result property="equipmentImg" column="equipment_img"/>
+  <result property="gymId" column="gym_id"/>
+  
+  <collection property="tags"
+              javaType="java.util.ArrayList"
+              ofType="string"
+              column="equipment_id"
+              select="com.ssafy.mvc.model.dao.EquipmentDao.getTagsByEquipmentId"/>
+</resultMap>
+
+  <!--  2. 이제 select 쿼리들 아래에 배치 -->
+<select id="getEquipmentsByGymId" resultMap="EquipmentResultMap">
+  SELECT 
+    e.equipment_id, 
+    e.equipment_name, 
+    e.equipment_img, 
+    e.gym_id
+  FROM equipment e
+  WHERE e.gym_id = #{gym_id}
+  ORDER BY e.equipment_id
+</select>
+
+<select id="searchByKeyword" resultMap="EquipmentResultMap">
+  SELECT 
+    e.equipment_id,
+    e.equipment_name,
+    e.equipment_img,
+    e.gym_id,
+    t.tag_name AS tag
+  FROM equipment e
+  LEFT JOIN equipment_tag et ON e.equipment_id = et.equipment_id
+  LEFT JOIN tag t ON et.tag_id = t.tag_id
+  WHERE e.gym_id = #{gym_id}
+    AND (
+      e.equipment_name LIKE CONCAT('%', #{keyword}, '%')
+      OR t.tag_name LIKE CONCAT('%', #{keyword}, '%')
+    )
+</select>
+
+  <select id="selectById" resultType="com.ssafy.mvc.model.dto.Equipment">
+    SELECT 
+      e.equipment_id,
+      e.equipment_name,
+      e.equipment_img,
+      e.gym_id
+    FROM equipment e
+    WHERE e.equipment_id = #{equipment_id}
+  </select>
+  
+<select id="getTagsByEquipmentId" resultType="string">
+  SELECT t.tag_name
+  FROM equipment_tag et
+  JOIN tag t ON et.tag_id = t.tag_id
+  WHERE et.equipment_id = #{equipment_id}
+</select>
+
+</mapper>

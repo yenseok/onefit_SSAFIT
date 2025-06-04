@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.mvc.model.dao.TrainerDao">
+
+	<!-- 트레이너 이름 키워드 검색 -->
+	<select id="searchTrainers"
+		resultType="com.ssafy.mvc.model.dto.Trainer">
+		SELECT trainer_id, trainer_name, gym_id
+		FROM trainer
+		WHERE trainer_name LIKE CONCAT('%', #{keyword}, '%')
+	</select>
+
+	<!-- 트레이너 ID 존재 여부 확인 -->
+	<select id="existsTrainer" resultType="boolean">
+		SELECT EXISTS (
+		SELECT 1 FROM trainer WHERE trainer_id = #{trainerId}
+		)
+	</select>
+
+	<!-- 트레이너 단건 조회 -->
+	<select id="selectById" resultType="Trainer">
+		SELECT * FROM trainer
+		WHERE trainer_id = #{trainerId}
+	</select>
+
+	<select id="selectAll"
+		resultType="com.ssafy.mvc.model.dto.Trainer">
+		SELECT * FROM trainer
+	</select>
+
+	<!-- TrainerMapper.xml -->
+	<select id="searchTrainersByGym" resultType="Trainer">
+		SELECT * FROM trainer
+		WHERE trainer_name LIKE #{keyword}
+		AND gym_id = #{gymId}
+	</select>
+
+
+</mapper>

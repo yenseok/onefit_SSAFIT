@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.mvc.model.dao.UserDao">
+
+    <!-- 회원 조회 -->
+    <select id="selectUserById" resultType="User">
+        SELECT * FROM user WHERE user_id = #{userId}
+    </select>
+
+    <!-- 닉네임으로 회원 조회 (로그인용) -->
+    <select id="selectByNickname" resultType="User">
+        SELECT * FROM user WHERE nickname = #{nickName}
+    </select>
+
+    <!-- 회원 수정 (닉네임/비밀번호 제외) -->
+    <update id="updateUser">
+        UPDATE user
+        SET name = #{name},
+            email = #{email},
+            phone = #{phone},
+            gym_id = #{gymId},
+            trainer_id = #{trainerId},
+            profile_image = #{profileImage}
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 비밀번호 변경 -->
+    <update id="updatePassword">
+        UPDATE user
+        SET password = #{password}
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 회원 탈퇴 -->
+    <delete id="deleteUser">
+        DELETE FROM user WHERE user_id = #{userId}
+    </delete>
+
+    <!-- 회원 가입 -->
+<insert id="insertUser">
+    INSERT INTO user (name, nickname, email, password, phone, gym_id, trainer_id, profile_image, role)
+    VALUES (#{name}, #{nickName}, #{email}, #{password}, #{phone}, #{gymId}, #{trainerId}, #{profileImage}, #{role})
+</insert>
+
+
+    <!-- 닉네임 존재 여부 -->
+    <select id="existsByNickname" resultType="boolean">
+        SELECT EXISTS (SELECT 1 FROM user WHERE nickname = #{nickName})
+    </select>
+
+    <!-- 비밀번호 인증용 조회 -->
+    <select id="getPasswordByUserId" resultType="String">
+        SELECT password FROM user WHERE user_id = #{userId}
+    </select>
+    
+
+    
+
+</mapper>
