@@ -185,3 +185,8 @@
 ## 📐 시스템 아키텍처
 ![시스템 아키텍처](docs/onefit.drawio.png)
 
+---
+
+## 🗄️ ERD
+![시스템 아키텍처](erd/erd.png)
+
