@@ -188,5 +188,14 @@
 ---
 
 ## 🗄️ ERD
-![시스템 아키텍처](erd/erd.png)
+![ERD](erd/erd.png)
+
+---
+
+## 일정
+![WBS](docs/관통PJT 일정.png)
+
+---
+
+## API 명세서
 
