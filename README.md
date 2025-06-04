@@ -144,14 +144,6 @@
     <td><img src="docs/pwchange2.png" width="300"/></td>
   </tr>
 </table>
-| 프로필 보기 | 프로필 수정 | 헬스장 검색 |
-|-------------|--------------|---------------|
-| ![](docs/profile.png) | ![](docs/profileedit.png) | ![](docs/gymsearch.png) |
-
-| 트레이너 검색 | 비밀번호 변경 | 비밀번호 확인 |
-|----------------|----------------|------------------|
-| ![](docs/trainersearch.png) | ![](docs/pwchange.png) | ![](docs/pwchange2.png) |
-
 ▲ 프로필 페이지: 프로필 조회, 프로필 수정(프로필 사진, 이름, 이메일, 헬스장, 트레이너), 비밀번호 변경 페이지
 
 ---
@@ -188,4 +180,8 @@
 ![FigJam](https://img.shields.io/badge/FigJam-8E64D8?style=flat&logo=figjam&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)
 
+---
+
+## 📐 시스템 아키텍처
+![시스템 아키텍처](docs/onefit.drawio.png)
 
