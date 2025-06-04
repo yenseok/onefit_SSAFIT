@@ -75,13 +75,13 @@
 
 * 사용자는 기존 게시물을 조회하고 키워드 기능으로 검색가능
 * 게시물 작성, 조회, 수정, 삭제 가능
-* 게시물 가상의 그\uub9bc 및 댓글 기능
+* 게시물 좋아요 및 댓글 기능
 
 ---
 
 ## 💻 서비스 화면
 
-#### 회원가입
+#### 회원가입 페이지
 
 <table><tr>
 <td><img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/></td>
@@ -89,8 +89,13 @@
 <td><img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/></td>
 <td><img src="https://github.com/user-attachments/assets/cf98b1bc-446a-406a-98a5-e119b424eb48" width="300"/></td>
 </tr></table>
+▲ 회원가입 페이지: 1단계-개인정보 입력, 2단계-헬스장 선택, 3단계-트레이너 선택
 
-#### 게시판
+#### 메인 페이지
+<img width="385" alt="스크린샷 2025-06-04 오후 8 02 15" src="https://github.com/user-attachments/assets/c5b8c128-49ce-4dbc-b964-93139cc5c472" />
+▲ 메인페이지: 게시판을 인기순과 최신순으로 조회
+
+#### 게시판 
 
 <table><tr>
 <td><img src="https://github.com/user-attachments/assets/6531b412-0c08-4843-9ae5-98e9336493f2" width="300"/></td>
@@ -98,6 +103,8 @@
 <td><img src="https://github.com/user-attachments/assets/8b121dd4-40ae-4206-9ded-7f2c6fae5af4" width="300"/></td>
 <td><img src="https://github.com/user-attachments/assets/3ac4fe24-ab94-41fe-9837-99063d61ce0b" width="300"/></td>
 </tr></table>
+▲ 게시판 상세조회, 검색, 내 글 검색, 게시글 작성 페이지
+
 
 ---
 
