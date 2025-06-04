@@ -84,12 +84,16 @@ ___
 <img width="379" alt="스크린샷 2025-06-04 오후 7 40 39" src="https://github.com/user-attachments/assets/4bcb8828-1935-418c-b342-457f9d2db970" />
 
 #### 회원가입 페이지
-<div style="display: flex; overflow-x: auto; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/>
-  <img src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" width="300"/>
-  <img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/>
-  <img width="300" src="https://github.com/user-attachments/assets/cf98b1bc-446a-406a-98a5-e119b424eb48" />
-</div>
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/></td>
+    <td><img src="https://github.com/user-attachments/assets/cf98b1bc-446a-406a-98a5-e119b424eb48" width="300"/></td>
+  </tr>
+</table>
+
 
 #### 메인 페이지
 <img width="372" alt="스크린샷 2025-06-04 오후 7 51 09" src="https://github.com/user-attachments/assets/8209cd47-7647-41a3-a644-09b6009ded8d" />
