@@ -42,6 +42,8 @@ ___
 - 운동기구 예약 기능 전체 구현 
 - PT 예약과 운동기구 예약을 통합한 ‘나의 예약’ 조회 기능 구현
 
+---
+
 ## 🧩 주요 기능
 
 ### 🔐 사용자 등록 및 로그인 & 탈퇴
@@ -75,6 +77,8 @@ ___
 - 게시글을 작성, 조회, 수정, 삭제할 수 있습니다.
 - 게시글에 좋아요를 누르거나 댓글을 작성할 수 있습니다.
 
+---
+
 ## 🖥️ 서비스 화면
 #### 로그인 페이지
 <img width="379" alt="스크린샷 2025-06-04 오후 7 40 39" src="https://github.com/user-attachments/assets/4bcb8828-1935-418c-b342-457f9d2db970" />
@@ -84,4 +88,20 @@ ___
   <img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/>
   <img src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" width="300"/>
   <img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/>
+  <img width="300" src="https://github.com/user-attachments/assets/cf98b1bc-446a-406a-98a5-e119b424eb48" />
 </div>
+
+#### 메인 페이지
+<img width="372" alt="스크린샷 2025-06-04 오후 7 51 09" src="https://github.com/user-attachments/assets/8209cd47-7647-41a3-a644-09b6009ded8d" />
+▲ 게시판 글을 인기순과 최신순으로 확인할 수 있는 메인 페이지
+
+#### 게시판
+<div style="display: flex; overflow-x: auto; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/6531b412-0c08-4843-9ae5-98e9336493f2" width="300"/>
+  <img src="https://github.com/user-attachments/assets/4fcd7503-41a9-49e8-ab51-216a6ad50c42" width="300"/>
+  <img src="https://github.com/user-attachments/assets/8b121dd4-40ae-4206-9ded-7f2c6fae5af4" width="300"/>
+  <img src="https://github.com/user-attachments/assets/3ac4fe24-ab94-41fe-9837-99063d61ce0b" width="300"/>
+</div>
+
+▲ 게시판 상세 조회, 게시판 작성, 게시판 검색, 내 글 검색 페이지
+
