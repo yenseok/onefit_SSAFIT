@@ -93,6 +93,7 @@
 
 #### 메인 페이지
 <img width="385" alt="스크린샷 2025-06-04 오후 8 02 15" src="https://github.com/user-attachments/assets/c5b8c128-49ce-4dbc-b964-93139cc5c472" />
+₩n
 ▲ 메인페이지: 게시판을 인기순과 최신순으로 조회
 
 #### 게시판 
