@@ -80,7 +80,8 @@ ___
 <img width="379" alt="스크린샷 2025-06-04 오후 7 40 39" src="https://github.com/user-attachments/assets/4bcb8828-1935-418c-b342-457f9d2db970" />
 
 #### 회원가입 페이지
-
-<img width="384" alt="스크린샷 2025-06-04 오후 7 41 44" src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" />
-<img width="383" alt="스크린샷 2025-06-04 오후 7 42 37" src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" />
-<img width="382" alt="스크린샷 2025-06-04 오후 7 43 06" src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" />
+<div style="display: flex; overflow-x: auto; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/594c999d-c5d2-4f21-919f-c71ea88d9f67" width="300"/>
+  <img src="https://github.com/user-attachments/assets/f36c7251-3c24-4f39-8df8-1fefe2e83954" width="300"/>
+  <img src="https://github.com/user-attachments/assets/36f717b8-be20-44f5-9071-ffba5bfbf941" width="300"/>
+</div>
