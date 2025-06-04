@@ -195,7 +195,12 @@
 ## 일정
 ![WBS](docs/wbs.png)
 
+---
 
+## 📡 API-명세서
+![API](docs/swagger1.png)
+![API](docs/swagger2.png)
+![API](docs/swagger3.png)
 ---
 
 ## API 명세서
